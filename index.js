@@ -31,7 +31,7 @@ async function display() {
             pokeWeight = json.weight;
             pokeHight = json.height
             pokePic = json.sprites.other["official-artwork"]["front_default"];
-            pokeSpeUrl =  json.species.url;
+            pokeSpeUrl = json.species.url;
         })
     console.log("promise", pokeHight, pokeWeight, pokePic);
 
@@ -42,16 +42,19 @@ async function display() {
         })
     console.log(pokeExp[0]);
     // const imageEl = document.getElementById("pokePic");
-    const imageEl = document.createElement("img");
-    imageEl.src = pokePic;
-    imageEl.width = 300
-    document.getElementById("pokePic").append(imageEl);
+    // const imageEl = document.createElement("img");
+    // imageEl.id = "pokeImg"
+    // imageEl.src = pokePic;
+    // imageEl.width = 300
+    // document.getElementById("pokePic").append(imageEl);
 
-    document.getElementById("pokeType").innerText += "   " + pokeType;
-    document.getElementById("pokeExp").innerText += "   \n" + pokeExp;
-    document.getElementById("pokeName").innerText += "  " + pokeName;
-    document.getElementById("pokeHight").innerText += "  " + pokeHight + " m";
-    document.getElementById("pokeWeight").innerText += "  " + pokeWeight + " Kg";
+    document.getElementById("pokeImg").src = pokePic;
+    document.getElementById("pokeImg").width = 300;
+    document.getElementById("pokeType").innerText = pokeType;
+    document.getElementById("pokeExp").innerText = pokeExp;
+    document.getElementById("pokeName").innerText = pokeName;
+    document.getElementById("pokeHight").innerText = pokeHight + " m";
+    document.getElementById("pokeWeight").innerText = pokeWeight + " Kg";
 }
 
 // function findUnderWeight(weight) {
