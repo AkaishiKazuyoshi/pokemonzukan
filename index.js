@@ -4,13 +4,14 @@ console.log("hello");
 const pokemonNames = ["フシギダネ", "フシギソウ", "フシギバナ", "ヒトカゲ", "リザード", "リザードン", "ゼニガメ", "カメール", "カメックス"];
 
 window.addEventListener("load", () => {
-const pokeListEl = document.getElementById("pokeSelect");
-  pokemonNames.forEach(element => {
-    let opttionEl = document.createElement("option");
-    opttionEl.value = element;
-    opttionEl.textContent = element;
-    pokeListEl.appendChild(opttionEl);
-  });
+    const pokeListEl = document.getElementById("pokeSelect");
+    pokemonNames.forEach(element => {
+        let opttionEl = document.createElement("option");
+        opttionEl.value = element;
+        opttionEl.textContent = element;
+        pokeListEl.appendChild(opttionEl);
+    });
+    console.log("event");
 });
 
 async function display() {
@@ -22,15 +23,25 @@ async function display() {
     let pokeExp;
     let pokePic;
 
-    const pokeNo = pokemonNames.indexOf(pokeName);
+    const pokeNo = pokemonNames.indexOf(pokeName) + 1;
 
     await fetch(`https://pokeapi.co/api/v2/pokemon/` + pokeNo).then(res => res.json())
         .then(json => {
             pokeWeight = json.weight;
             pokeHight = json.height
-            pokePic = json.sprites.other.official-artwork.front_default;
+            pokePic = json.sprites.other["official-artwork"]["front_default"];
         })
+    console.log("promise", pokeHight, pokeWeight, pokePic);
 
+    // const imageEl = document.getElementById("pokePic");
+    const imageEl = document.createElement("img");
+    imageEl.src = pokePic;
+    imageEl.width = 300
+    document.getElementById("pokePic").append(imageEl);
+
+    document.getElementById("pokeName").innerText += "  " + pokeName;
+    document.getElementById("pokeHight").innerText += "  " + pokeHight + " m";
+    document.getElementById("pokeWeight").innerText += "  " + pokeWeight + "Kg";
 }
 
 function findUnderWeight(weight) {
