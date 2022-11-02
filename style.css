@@ -79,7 +79,7 @@
        /* border: 100px solid #f00; */
    /* border-radius: 90%; */
    width: 300px;
-   height: 350px;
+   height: 370px;
    padding: 10px;
    margin: 5px;
    border-color: #bed5ea;
@@ -88,6 +88,24 @@
    font-size: 20px;
    font-family: HG丸ｺﾞｼｯｸM-PRO;    
 }
+
+#pokeImg {
+   /* ★疑問 角丸変更できない */
+   border-style: solid;
+   border-width: 2px;
+       /* border: 100px solid #f00; */
+   /* border-radius: 90%; */
+   width: 300px;
+   /* height: 350px; */
+   /* padding: 10px;
+   margin: 5px;
+   border-color: #bed5ea;
+   background-color: #b6dbf8;
+   color: #5235c2;
+   font-size: 20px;
+   font-family: HG丸ｺﾞｼｯｸM-PRO;     */
+}
+
 
 #pokeNameTitle {
    border-style: solid;
