@@ -89,10 +89,42 @@
    font-family: HG丸ｺﾞｼｯｸM-PRO;    
 }
 
+#pokeNameTitle {
+   border-style: solid;
+   border-width: 2px;
+   width: 150px;
+   height: 30px;
+   padding: 10px;
+   margin: 5px;
+   border: 1px solid #f00;
+   border-radius: 3px;
+   border-color: #F0F8FF;
+   background-color: #e8f8d3;
+   color: #5235c2;
+   font-size: 20px;
+   font-family: HG丸ｺﾞｼｯｸM-PRO;    
+}
+
 #pokeName {
    border-style: solid;
    border-width: 2px;
    width: 300px;
+   height: 30px;
+   padding: 10px;
+   margin: 5px;
+   border: 1px solid #f00;
+   border-radius: 3px;
+   border-color: #F0F8FF;
+   background-color: #e8f8d3;
+   color: #5235c2;
+   font-size: 20px;
+   font-family: HG丸ｺﾞｼｯｸM-PRO;    
+}
+
+#pokeTypeTitle {
+   border-style: solid;
+   border-width: 2px;
+   width: 150px;
    height: 30px;
    padding: 10px;
    margin: 5px;
@@ -115,6 +147,22 @@
    border: 1px solid #f00;
    border-radius: 3px;
    border-color: #F0F8FF;
+   background-color: #ebf0e4;
+   color: #5235c2;
+   font-size: 20px;
+   font-family: HG丸ｺﾞｼｯｸM-PRO;    
+}
+
+#pokeHightTitle {
+   border-style: solid;
+   border-width: 2px;
+   width: 150px;
+   height: 30px;
+   padding: 10px;
+   margin: 5px;
+   border: 1px solid #f00;
+   border-radius: 3px;
+   border-color: #F0F8FF;
    background-color: #e8f8d3;
    color: #5235c2;
    font-size: 20px;
@@ -131,12 +179,27 @@
    border: 1px solid #f00;
    border-radius: 3px;
    border-color: #F0F8FF;
-   background-color: #e8f8d3;
+   background-color: #ebf0e4;
    color: #5235c2;
    font-size: 20px;
    font-family: HG丸ｺﾞｼｯｸM-PRO;    
 }
 
+#pokeWeightTitle {
+   border-style: solid;
+   border-width: 2px;
+   width: 150px;
+   height: 30px;
+   padding: 10px;
+   margin: 5px;
+   border: 1px solid #f00;
+   border-radius: 3px;
+   border-color: #F0F8FF;
+   background-color: #e8f8d3;
+   color: #5235c2;
+   font-size: 20px;
+   font-family: HG丸ｺﾞｼｯｸM-PRO;    
+}
 
 #pokeWeight {
    border-style: solid;
@@ -148,7 +211,7 @@
    border: 1px solid #f00;
    border-radius: 3px;
    border-color: #F0F8FF;
-   background-color: #e8f8d3;
+   background-color: #ebf0e4;
    color: #5235c2;
    font-size: 20px;
    font-family: HG丸ｺﾞｼｯｸM-PRO;    
@@ -224,6 +287,9 @@
    font-size: 20px;
    font-family: HG丸ｺﾞｼｯｸM-PRO;    
 }
+
+
+
 
 
 /* 
