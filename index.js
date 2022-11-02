@@ -2,8 +2,26 @@
 console.log("hello");
 
 const pokemonNames = ["フシギダネ", "フシギソウ", "フシギバナ", "ヒトカゲ", "リザード", "リザードン", "ゼニガメ", "カメール", "カメックス"];
+const ohtaniA = ["大谷翔平", "大谷翔平", "大谷翔平", "大谷翔平", "大谷翔平", "大谷翔平", "大谷翔平", "大谷翔平"];
+const digMenber = ["あびるまん", "えりこさん", "こたろーさん", "kikiさん", "みずきさん", "ありささん", "つばささん", "ゆーすけさん", "みくさん", "かけるさん", "りこさん"];
 
-window.addEventListener("load", () => {
+const extraObj = {
+    大谷翔平: {},
+    あびるまん: {},
+    えりこさん: {},
+    こたろーさん: {},
+    kikiさん:{},
+    みづきさん:{},
+    ありささん:{},
+    つばささん: {},
+    ゆーすけさん:{},
+    みくさん:{},
+    かけるさん:{},
+    りこさん:{},
+    
+}
+
+function pokeSelectAp() {
     const pokeListEl = document.getElementById("pokeSelect");
     pokemonNames.forEach(element => {
         let opttionEl = document.createElement("option");
@@ -11,7 +29,31 @@ window.addEventListener("load", () => {
         opttionEl.textContent = element;
         pokeListEl.appendChild(opttionEl);
     });
-    console.log("event");
+}
+
+function ohtani() {
+    const pokeListEl = document.getElementById("pokeSelect");
+    ohtaniA.forEach(element => {
+        let opttionEl = document.createElement("option");
+        opttionEl.value = element;
+        opttionEl.textContent = element;
+        pokeListEl.appendChild(opttionEl);
+    });
+}
+
+function dig() {
+    const pokeListEl = document.getElementById("pokeSelect");
+    digMenber.forEach(element => {
+        let opttionEl = document.createElement("option");
+        opttionEl.value = element;
+        opttionEl.textContent = element;
+        pokeListEl.appendChild(opttionEl);
+    });
+}
+
+window.addEventListener("load", () => {
+    pokeSelectAp()
+    // console.log("event");
 });
 
 async function display() {
