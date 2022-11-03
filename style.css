@@ -374,56 +374,64 @@
    font-family: HG丸ｺﾞｼｯｸM-PRO;    
 }
 
-
-
-
-/* 
-
-#circle {
-   display: flex;
-}
-
-#circleFlash {
+/*表示するテキストが切り替わる*/
+.btntextchange{
+    /*テキストの基点とするためrelativeを指定*/
+	position: relative;
+    /*ボタンの形状*/
+	/* border: 1px solid #555; */
    border-style: solid;
    border-width: 2px;
-   border-radius: 90%;
-   width: 50px;
-   height: 50px;
-   margin: 15px;
-   border-color: #bed5ea;
-   background-color: #19a5e6;
+	border-radius:3px;
+   border-color: #F0F8FF;
+    min-width:70px;
+   height: 60px;
+   margin: 5px; 
+	padding: 10px;
+    text-align: center;
+	display: inline-block;
+    text-decoration: none;
+    color: #5235c2;
+    background-color: #96d4fb;
+    outline: none;
+    /*アニメーションの指定*/
+    transition: all .1s;
 }
 
-#circle1 {
-   border-style: solid;
-   border-width: 2px;
-   border-radius: 90%;
-   width: 20px;
-   height: 20px;
-   margin: 15px 5px 5px 5px;
-   border-color: #bed5ea;
-   background-color: #0a0909;
+/*hoverした際の変化*/
+.btntextchange:hover{
+  background:rgb(6, 46, 243);
+  color:#fff;
 }
 
-#circle2 {
-   border-style: solid;
-   border-width: 2px;
-   border-radius: 90%;
-   width: 20px;
-   height: 20px;
-   margin: 15px 5px 5px 5px;
-   border-color: #bed5ea;
-   background-color: #d8e33c;
+.btntextchange span{
+    /*絶対配置でテキストの位置を決める*/
+	position: absolute;
+	left: 50%;
+	top:50%;
+    transform:translate(-50%,-50%);
+    /*アニメーションの指定*/
+    transition: all .5s;
+  /*ブロック要素にしてテキスト折り返しなし*/  
+	display: block;
+	white-space: nowrap;
 }
 
-#circle3 {
-   border-style: solid;
-   border-width: 2px;
-   border-radius: 90%;
-   width: 20px;
-   height: 20px;
-   margin: 15px 5px 5px 5px;
-   border-color: #bed5ea;
-   background-color: #0a0909;
-} */
+/*差し替わるテキストの設定*/
+.btntextchange span:nth-child(2){
+	opacity:0;/*透過0に*/
+}
+
+/*hoverするとテキストが入れ替わる設定*/
+.btntextchange:hover span:nth-child(1){
+	opacity:0;/*透過0に*/
+}
+
+.btntextchange:hover span:nth-child(2){
+	opacity:1;/*不透明に*/
+}
+
+#pokeBall{
+   border-radius: 50%;
+}
 
