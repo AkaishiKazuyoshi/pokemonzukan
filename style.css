@@ -431,7 +431,52 @@
 	opacity:1;/*不透明に*/
 }
 
-#pokeBall{
+.ball{
    border-radius: 50%;
+   margin: 0 auto;
 }
+
+.move{
+   animation: ballMove 8s;
+   /* 最後停止ならばforwardsつける */
+}
+
+@keyframes ballMove {
+   0%{
+      transform: translate(0, 0);
+   }
+   5%{
+      transform: translate(0, 80px);
+   }
+   10%{
+      transform: translate(0, 0);
+   }
+   15%{
+      transform: translate(0, 80px);
+   }
+   20%{
+      transform: translate(0, 0);
+   }
+   25%{
+      transform: translate(0, 80px);
+   }
+   30%{
+      transform: translate(0, 0);
+   }
+   35%{
+      transform: translate(0, 80px);
+   }
+   40%{
+      transform: translate(80px, 180px);
+   }
+   45%{
+      transform: translate(-80px, -180px);
+      /* width: 50%;
+      height: 35%; */
+   }
+
+
+}
+
+
 
