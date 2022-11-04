@@ -110,6 +110,7 @@ async function display() {
 
     document.getElementById("pokeImg").src = pokePic;
     document.getElementById("pokeImg").width = 300;
+    document.getElementById("pokeImg2").src = pokePic;
     document.getElementById("pokeType").innerText = pokeType;
     document.getElementById("pokeExp").innerText = pokeExp;
     document.getElementById("pokeName").innerText = pokeName;
