@@ -763,6 +763,10 @@
    /* background-color: #43f055; */
   }
 
+  #pokeImg2 {
+   width: 400px;
+  }
+
   /* h2 {
    font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'Hiragino Mincho ProN', 'HGS明朝E', 'ＭＳ Ｐ明朝', serif;
    padding: 1rem 2rem;
