@@ -8,17 +8,17 @@ const digMenber = ["あびるまん", "たまろーさん", "えりこさん", "
 const extraObj = {
     大谷翔平: { img: "images/ohtani.jpeg", name: "大谷翔平", type: "ああ", hight: "いい", weight: "うう", explain: "大" },
     あびるまん: { img: "images/abiru.png", name: "あびるまん", type: "", hight: "？？", weight: "？？", explain: "" },
-    たまろーさん: { img: "", name: "たまろーさん", type: "", hight: "？？", weight: "？？", explain: "" },
-    えりこさん: { img: "", name: "えりこさん", type: "", hight: "？？", weight: "？？", explain: "" },
-    こたろーさん: { img: "", name: "こたろーさん", type: "", hight: "？？", weight: "？？", explain: "" },
-    kikiさん: { img: "", name: "kikiさん", type: "", hight: "？？", weight: "？？", explain: "" },
-    みづきさん: { img: "", name: "みづきさん", type: "", hight: "？？", weight: "？？", explain: "" },
-    ありささん: { img: "", name: "ありささん", type: "", hight: "？？", weight: "？？", explain: "" },
-    つばささん: { img: "", name: "つばささん", type: "", hight: "？？", weight: "？？", explain: "" },
-    ゆーすけさん: { img: "", name: "ゆーすけさん", type: "", hight: "？？", weight: "？？", explain: "" },
-    みくさん: { img: "", name: "みくさん", type: "", hight: "？？", weight: "？？", explain: "" },
-    かけるさん: { img: "", name: "かけるさん", type: "", hight: "？？", weight: "？？", explain: "" },
-    りこさん: { img: "", name: "りこさん", type: "", hight: "？？", weight: "？？", explain: "" },
+    たまろーさん: { img: "images/tamaroh.png", name: "たまろーさん", type: "", hight: "？？", weight: "？？", explain: "" },
+    えりこさん: { img: "images/eriko.png", name: "えりこさん", type: "", hight: "？？", weight: "？？", explain: "" },
+    こたろーさん: { img: "images/kotaro.png", name: "こたろーさん", type: "", hight: "？？", weight: "？？", explain: "" },
+    kikiさん: { img: "images/kiki.png", name: "kikiさん", type: "", hight: "？？", weight: "？？", explain: "" },
+    みづきさん: { img: "images/mizuki.png", name: "みづきさん", type: "", hight: "？？", weight: "？？", explain: "" },
+    ありささん: { img: "images/arisa.png", name: "ありささん", type: "", hight: "？？", weight: "？？", explain: "" },
+    つばささん: { img: "images/tsubasa.png", name: "つばささん", type: "", hight: "？？", weight: "？？", explain: "" },
+    ゆーすけさん: { img: "images/yusuke.png", name: "ゆーすけさん", type: "", hight: "？？", weight: "？？", explain: "" },
+    みくさん: { img: "images/miku.png", name: "みくさん", type: "", hight: "？？", weight: "？？", explain: "" },
+    かけるさん: { img: "images/kakeru.png", name: "かけるさん", type: "", hight: "？？", weight: "？？", explain: "" },
+    りこさん: { img: "images/riko.png", name: "りこさん", type: "", hight: "？？", weight: "？？", explain: "" },
 }
 
 function pokeSelectAp() {
@@ -116,6 +116,9 @@ async function display() {
     document.getElementById("pokeName").innerText = pokeName;
     document.getElementById("pokeHight").innerText = pokeHight + " m";
     document.getElementById("pokeWeight").innerText = pokeWeight + " Kg";
+
+    const ballEL = document.getElementById("ballId");
+    ballEL.classList.remove("move");
 }
 
 // function findUnderWeight(weight) {
@@ -132,6 +135,18 @@ async function display() {
 // });
 console.log(document.getElementById("ballBtnId"));//★確認できない
 console.log(document.querySelectorAll(".ball")[0]);
+}
+
+function getpoke() {
+    const ballEL = document.getElementById("ballId");
+    console.log(ballEL);
+    // ballEL.classList.remove("ball");
+    ballEL.classList.add("move");
+
+    setTimeout(() => {
+        document.getElementById("pokeImg2").src = "";
+    }, 3500);
+
 }
 
  // ballBtn 以上 ***********************************************
