@@ -122,3 +122,18 @@ async function display() {
 //         .then(json => json.results.map(obj => fetch(obj.url).then(res => res.json())))
 //         .then(arr => Promise.all(arr).then(res => res.filter(elm => Number(elm.weight) < weight)));
 // }
+
+ // ballBtn ***********************************************
+{
+//    const getBtn = document.getElementById("ballBtnId");
+// getBtn.addEventListener("click", ()=>{
+//     getBtn.classList.add("move");
+// });
+console.log(document.getElementById("ballBtnId"));//★確認できない
+console.log(document.querySelectorAll(".ball")[0]);
+}
+
+ // ballBtn 以上 ***********************************************
+
+
+
