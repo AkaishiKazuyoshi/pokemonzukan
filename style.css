@@ -1,7 +1,14 @@
 .scroll{
-   width: 2300px;
+	width: 2400px;
+	height: 850px;
+	display: flex;
+	overflow-x:scroll;
+	border: 2px solid rgb(56, 206, 229);
+}
+
+.waku{
+   width: 4000px;
    display: flex;
-	 overflow-x:scroll;
 }
 
 #tool {
@@ -785,18 +792,19 @@
 
  #pokeGet {
 	/* ★疑問 角丸変更できない */
-	border-style: solid;
-	border-width: 2px;
+	/* opacity: 0; */
+	/* border-style: solid;
+	border-width: 2px; */
 			/* border: 100px solid #f00; */
 	/* border-radius: 90%; */
-	width: 300px;
-	height: 370px;
+	width: 250px;
+	height: 300px;
 	padding: 10px;
-	margin: 5px;
-	border-color: #bed5ea;
-	background:radial-gradient(#f0f3f6, #0baeea); 
+	margin: 100px 200px 0px 400px;
+	/* border-color: #bed5ea; */
+	/* background:radial-gradient(#f0f3f6, #0baeea);  */
 	/* background-color: #b6dbf8; */
-	color: #f0f3f6;
+	/* color: #f0f3f6; */
 	font-size: 20px;
 	font-family: HG丸ｺﾞｼｯｸM-PRO;    
 }
@@ -808,7 +816,7 @@
     right: 30px;
     bottom: 30px;
     margin: 0;
-    
+		/* margin: 5px 10px 0px 400px; */
 }
 #pagetop a{
     position: relative;
@@ -816,7 +824,7 @@
     width: 70px;
     height: 70px;
     justify-content: center;
-    background: #fdfdfc ;/*背景の色を変える*/
+    background: #d4d410 ;/*背景の色を変える*/
     transition: opacity .6s ease;
     color: #FFFFFF;/*アイコンの色を変える*/
     align-items: center;
@@ -826,6 +834,7 @@
 }
 #pagetop a:hover {
 	background: #FFA500 ;/*背景の色を変える*/
+	transition: opacity 5.6s ease;
     /* opacity: .3; */
 }
 @media screen and (max-width:767px) {
