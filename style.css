@@ -1,7 +1,7 @@
 .scroll{
    width: 2300px;
-   overflow-x:scroll;
    display: flex;
+	 overflow-x:scroll;
 }
 
 #tool {
@@ -782,6 +782,24 @@
    /* -webkit-background-clip: text;
    -webkit-text-fill-color: transparent; */
  }
+
+ #pokeGet {
+	/* ★疑問 角丸変更できない */
+	border-style: solid;
+	border-width: 2px;
+			/* border: 100px solid #f00; */
+	/* border-radius: 90%; */
+	width: 300px;
+	height: 370px;
+	padding: 10px;
+	margin: 5px;
+	border-color: #bed5ea;
+	background:radial-gradient(#f0f3f6, #0baeea); 
+	/* background-color: #b6dbf8; */
+	color: #f0f3f6;
+	font-size: 20px;
+	font-family: HG丸ｺﾞｼｯｸM-PRO;    
+}
 
  /* 戻るボタン **************************** */
  /* https://www.amuu-blog1265.com/topbutton-css/ */
